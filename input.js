@@ -9,12 +9,12 @@ while (true) {
 
     let vanus = parseInt(rida)
 
-    if (vanus < 18) {
+    if (vanus < 16) {
         console.log("Fuck off, sa pole piisavalt vana")
         continue
     }
 
-    if (vanus == 18) {
+    if (vanus == 16) {
         console.log("Okei, tegelt sa pole ikka veel piisavalt vana")
         continue
     }
