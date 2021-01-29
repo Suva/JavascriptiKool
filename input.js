@@ -19,9 +19,9 @@ while (true) {
         continue
     }
 
-    let vanus10AastaPärast = vanus + 10
+    let vanusTulevikus = vanus + 20
 
-    console.log("Sa oled 10 aasta pärast: " + vanus10AastaPärast)
+    console.log("Sa oled 20 aasta pärast: " + vanusTulevikus)
 }
 
 console.log("END")
