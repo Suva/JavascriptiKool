@@ -19,6 +19,16 @@ while (true) {
         continue
     }
 
+    if (vanus < 50) {
+        console.log("Alla poole sajandi")
+    } else if (vanus == 50) {
+        console.log("Täpselt pool sajandit")
+    } else if (vanus == 51) {
+        console.log("Täpselt pool sajandit ja üks aasta")
+    } else {
+        console.log("Pool sajandit või vanem")
+    }
+
     let vanusTulevikus = vanus + 20
 
     console.log("Sa oled 20 aasta pärast: " + vanusTulevikus)
