@@ -4,6 +4,7 @@ let name = "Juhan Parts"
 
 let c = alpha + beer + 3
 
+// Järgmine rida trükib mingit jama välja
 console.log(alpha, beer, c)
 
 /*

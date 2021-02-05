@@ -17,13 +17,15 @@ while (true) {
 while (true) {
     let rida = reader.question("Aga kas sulle kassid meeldivad?")
 
+    console.log(checkAnswer(rida))
+}
+
+function checkAnswer(rida) {
     if (rida == "jah") {
-        console.log("Oh, sa oled mu lemmik inimene!")
-        break
+        return "Oh, sa oled mu lemmik inimene!"
     } else if (rida == "ei") {
-        console.log("K2i persse, LOX!")
-        break
+        return "K2i persse, LOX!"
     } else if (rida == "ma ei tea") {
-        console.log("No, mõtle välja")
+        return "No, mõtle välja"
     }
 }

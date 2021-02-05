@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minu Esimene Veebileht :)</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&family=Hanalei&display=swap"
+          rel="stylesheet">
+</head>
+<style>
+    /* CSS - Cascading Style Sheets */
+    html {
+        min-height: 100%;
+    }
+
+    body {
+        background: linear-gradient(rebeccapurple, black);
+        color: #e799ff;
+        font-size: 24pt;
+        margin: 0;
+        padding: 20px;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+
+    .copyright {
+        font-size: 80%;
+        text-align: right;
+        bottom: 0;
+        right: 0;
+        padding: 10px;
+    }
+
+    select, button {
+        font-size: 32pt;
+        font-family: 'Hanalei', cursive;
+        background: #611b1b;
+        color: white;
+        padding: 10px;
+    }
+
+    .footer-image, .pentagram {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+
+    .pentagram {
+        width: 50% !important;
+    }
+
+    .luuletus {
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .luuletus:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s;
+        cursor: zoom-in;
+    }
+
+    .content {
+        border: 1px solid #553260;
+        padding: 20px;
+        margin: 20px auto;
+        width: 1024px;
+        box-shadow: 0 0 60000px black;
+    }
+
+    a {
+        color: #e799ff;
+        text-decoration: none;
+    }
+</style>
+<body>
+<img class="pentagram" src="pentakas.gif">
+<div class="content">
+    <h1>Minu veebileht</h1>
+
+
+    <p>Tere minu nimi on Jaan, ma tulen Tallinast. Mulle meeldib Juua ja Laaberdada.</p>
+
+    <div>
+        <button onclick="alert('Türa ma ütlesin ju.')">ÄRA VAJUTA</button>
+    </div>
+
+    <div>
+        <h3>Kas sul lapsi on v?</h3>
+        <select>
+            <option>-</option>
+            <option>Yep</option>
+            <option>Nowai</option>
+        </select>
+    </div>
+
+    <div>
+        <h3>Kas sulle kassid meeldivad?</h3>
+        <select onchange="
+        if (this.value == 'no') {
+            document.querySelector('.content').style.display = 'none'
+            document.querySelector('.no-more-talk').style.display = 'block'
+            setTimeout(()=>document.location='https://www.google.com', 3000)
+        }
+">
+            <option>-</option>
+            <option value="no">fuck cats</option>
+            <option value="yes">yerp</option>
+        </select>
+    </div>
+
+    <div>
+        <h3>Aga koerad?</h3>
+        <div><input type="radio" name="dogs"> Fuhh</div>
+        <div><input type="radio" name="dogs"> Jaaaaaa!</div>
+    </div>
+
+    <p>asdasdasdasdasd a sd asd asd asd</p>
+    <p>asdasdasdasdasd a sd asd asd asd</p>
+    <p>asdasdasdasdasd a sd<br>
+        asd asd asd</p>
+
+    <div class="luuletus">
+        <h3>Kass</h3>
+
+        <p>
+            Eile nägin ma kassi<br>
+            Täna situn tassi<br>
+            Homme taas välja lähen<br>
+            Endast lugu pean vähem
+        </p>
+    </div>
+
+    <h3>Mulle meeldivad</h3>
+    <ul> <!-- Unordered List -->
+        <li>Kassid</li>
+        <li>Joomine</li>
+        <li>Laaberdamine</li>
+        <li>Javascript</li>
+        <li>Anime</li>
+        <li>Techno</li>
+        <li>...</li>
+    </ul>
+
+    <h3>Ma vihkan kolme asja:</h3>
+    <ol>
+        <li>Liste</li>
+        <li>Lõpetamata asjad</li>
+    </ol>
+
+    <h3>Minu lemmik veebilehed</h3>
+
+    <ul>
+        <li>
+            <a href="https://www.google.com">Google</a>
+        </li>
+        <li>
+            <a href="https://www.xvideos.com">XVideos</a>
+        </li>
+        <li>
+            <a href="https://www.crunchyroll.com">Crunchyroll</a>
+        </li>
+    </ul>
+
+    <a href="https://tv3.ee/saade/suur-lotokolmapaev-rooside-soda/"><img class="footer-image" src="rose-footer.png"></a>
+
+    <div class="copyright">Copyright © 2021 Jaan Pullerits</div>
+</div>
+
+<div class="no-more-talk" style="display: none">
+    <h1>Ma ei taha sinuga rohkem rääkida</h1>
+</div>
+</body>
+</html>
