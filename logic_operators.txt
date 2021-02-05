@@ -1,0 +1,25 @@
+        OR: ||
+
+      | true | false
+--------------------
+true  | true | true
+false | true | false
+--------------------
+
+
+        AND: &&
+
+      | true  | false
+---------------------
+true  | true  | false
+false | false | false
+---------------------
+
+Booleans: true, false
+
+
+        NOT: !
+!true === false
+!false == true
+!0 == true
+!-42 == false
