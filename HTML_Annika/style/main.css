@@ -1,0 +1,80 @@
+/* CSS - Cascading Style Sheets */
+@font-face {
+    font-family: 'Veteran Typewriter';
+    src: url('VeteranTypewriter.woff2') format('woff2'),
+    url('VeteranTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: #000000;
+    color: darkgray;
+    font-size: 16pt;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Veteran Typewriter', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-image, .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.logo {
+    width: 50% !important;
+}
+
+.quote:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+    cursor: zoom-in;
+}
+
+.content {
+    max-width: 1500px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.quote {
+    border: 10px solid #561c27;
+    background-color: #701829;
+    padding: 20px;
+    min-width: 360px;
+    font-size: 10pt;
+    font-family: Verdana;
+    color: #cecece;
+}
+
+.text {
+    margin-right: 40px;
+}
+
+.socialmedia {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.socialmedia li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    color: darkgray;
+}

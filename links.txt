@@ -1,0 +1,10 @@
+Flexbox:
+
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+http://www.flexboxdefense.com/
+
+
+CSS Selectors
+
+https://www.w3schools.com/cssref/css_selectors.asp
+
