@@ -50,6 +50,8 @@ body {
     justify-content: space-between;
 }
 
+
+
 .quote {
     border: 10px solid #561c27;
     background-color: #701829;
@@ -68,6 +70,8 @@ body {
     list-style: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .socialmedia li {
@@ -77,4 +81,18 @@ body {
 
 a {
     color: darkgray;
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .content .quote {
+        min-width: 0;
+    }
+
+    .text {
+        margin: 0;
+    }
 }
