@@ -1,0 +1,25 @@
+/* CSS - Cascading Style Sheets */
+@font-face {
+    font-family: 'Veteran Typewriter';
+    src: url('VeteranTypewriter.woff2') format('woff2'),
+    url('VeteranTypewriter.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    background: #000000;
+    color: darkgray;
+    font-size: 16pt;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Veteran Typewriter', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
