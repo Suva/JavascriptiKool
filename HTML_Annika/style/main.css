@@ -33,14 +33,33 @@ body {
 
 .logo {
     width: 50% !important;
+    padding-bottom: 50px;
 }
 
-.quote:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s;
-    cursor: zoom-in;
+.accordion {
+    background-color: #000000;
+    color: darkgray;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Veteran Typewriter', serif;
+    font-size: 16pt;
+    transition: 0.4s;
 }
 
+.active, .accordion:hover {
+    background-color: #263d0e ;
+}
+
+.panel {
+    padding: 10px;
+    display: none;
+    background-color: #000000;
+    overflow: hidden;
+}
 .content {
     max-width: 1500px;
     display: flex;
@@ -50,25 +69,13 @@ body {
     justify-content: space-between;
 }
 
-
-
-.quote {
-    border: 10px solid #561c27;
-    background-color: #701829;
-    padding: 20px;
-    min-width: 360px;
-    font-size: 10pt;
-    font-family: Verdana;
-    color: #cecece;
-}
-
 .text {
     margin-right: 40px;
 }
 
 .socialmedia {
     list-style: none;
-    padding: 0;
+    padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
